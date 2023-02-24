@@ -1,0 +1,458 @@
+{% extends "base.html.twig" %}
+
+{% trans_default_domain 'main' %}
+
+{% block title %}Founder heroes{% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="css/renderhero.css">
+    <link rel="stylesheet" href="css/buttons.css">
+{% endblock %}
+
+{% block header %}
+    <header class="text-light p-5 text-center text-sm-start">
+        <div class="container header">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="head-title">
+                    <h1>{{ 'main.header.title'|trans }}</h1>
+                    <p class="lead my-4 ">{{ 'main.header.subtitle'|trans }}</p>
+                    <button class="btn btn-lg" onClick="document.getElementById('btn-link').scrollIntoView();">{{ 'main.header.button'|trans }}</button>
+                </div>
+                <img class="img-fluid d-none d-sm-block" src="/img/hero-image.svg" alt="map">
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="control-panel">
+            <div class="panel">
+                <div class="panel-item" onClick="document.getElementById('btn-link').scrollIntoView();">
+                    <p>Work</p>
+                </div>
+                <div class="panel-item" onClick="document.getElementById('age-link').scrollIntoView();">
+                    <p>Age</p>
+                </div>
+                <div class="panel-item" onClick="document.getElementById('map-link').scrollIntoView();">
+                    <p>Map</p>
+                </div>
+                <div class="panel-item" onClick="document.getElementById('hero-link').scrollIntoView();">
+                    <p>Heroes</p>
+                </div>
+            </div>
+        </div>
+        <section class="work-icons">
+            <div class="container">
+                <div class="main-title" id="btn-link">
+                    <h1><span class="underline">{{ 'main.main.title-work-underline'|trans }}</span><span class="purple"> {{ 'main.main.title-work-purple'|trans }}</span></h1>
+                </div>
+                <div class="work-items">
+                    <div class="work-item" id="Agrarunternehmen">
+                        <img src="img/icons/1-1.svg" alt="Landwirtschaft">
+                        <p>{{ 'main.main.icons.1'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Großhandelsunternehmen">
+                        <img src="img/icons/2-1.svg" alt="Handel">
+                        <p>{{ 'main.main.icons.2'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Bauunternehmen">
+                        <img src="img/icons/3-1.svg" alt="Bauindustrie">
+                        <p>{{ 'main.main.icons.3'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Biotechnologieunternehmen">
+                        <img src="img/icons/4-1.svg" alt="Biotech">
+                        <p>{{ 'main.main.icons.4'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Dienstleistungsunternehmen">
+                        <img src="img/icons/5-1.svg" alt="Dienstleistung">
+                        <p>{{ 'main.main.icons.5'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Energieversorger">
+                        <img src="img/icons/6-1.svg" alt="Energie">
+                        <p>{{ 'main.main.icons.6'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Beteiligungsgesellschaft">
+                        <img src="img/icons/7-1.svg" alt="Finanzmärkte">
+                        <p>{{ 'main.main.icons.7'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Forschungsunternehmen">
+                        <img src="img/icons/25-1.svg" alt="Forschung">
+                        <p>{{ 'main.main.icons.8'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Fotounternehmen">
+                        <img src="img/icons/9-1.svg" alt="Fotografie">
+                        <p>{{ 'main.main.icons.9'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Hersteller von medizinischen Geräten">
+                        <img src="img/icons/10-1.svg" alt="Gesundheit">
+                        <p>{{ 'main.main.icons.10'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Nuklearunternehmen">
+                        <img src="img/icons/19-1.svg" alt="Nuklear">
+                        <p>{{ 'main.main.icons.11'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Entsorgungsunternehmen">
+                        <img src="img/icons/12-1.svg" alt="Recycling">
+                        <p>{{ 'main.main.icons.12'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Theaterbetrieb">
+                        <img src="img/icons/13-1.svg" alt="Kunst">
+                        <p>{{ 'main.main.icons.13'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Mineralölunternehmen">
+                        <img src="img/icons/14-1.svg" alt="Rohstoffe">
+                        <p>{{ 'main.main.icons.14'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Fluggesellschaft">
+                        <img src="img/icons/15-1.svg" alt="Luftfahrt">
+                        <p>{{ 'main.main.icons.15'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Nachrichtenagentur">
+                        <img src="img/icons/16-1.svg" alt="Nachrichten">
+                        <p>{{ 'main.main.icons.16'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Medienunternehmen">
+                        <img src="img/icons/17-1.svg" alt="Media">
+                        <p>{{ 'main.main.icons.17'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Nanotechnologieunternehmen">
+                        <img src="img/icons/18-1.svg" alt="Nanotech">
+                        <p>{{ 'main.main.icons.18'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Informationstechnikunternehmen">
+                        <img src="img/icons/11-1.svg" alt="IT">
+                        <p>{{ 'main.main.icons.19'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Sportartikelhersteller">
+                        <img src="img/icons/20-1.svg" alt="Sportarten">
+                        <p>{{ 'main.main.icons.20'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Raumfahrtunternehmen">
+                        <img src="img/icons/21-1.svg" alt="Raum">
+                        <p>{{ 'main.main.icons.21'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Unternehmen">
+                        <img src="img/icons/22-1.svg" alt="Mode">
+                        <p>{{ 'main.main.icons.22'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Unternehmen mit Direktmarketing">
+                        <img src="img/icons/26-1.svg" alt="Marketing">
+                        <p>{{ 'main.main.icons.23'|trans }}</p>
+                    </div>
+                    <div class="work-item" id="Automobilzulieferer">
+                        <img src="img/icons/23-1.svg" alt="Automobile">
+                        <p>{{ 'main.main.icons.24'|trans }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-age">
+            <div class="container">
+                <div class="main-title" id="age-link">
+                    <h1><span class="purple">{{ 'main.main.title-age-purple'|trans }} </span><span class="underline">{{ 'main.main.title-age-underline'|trans }}</span></h1>
+                </div>
+                <div class="range">
+                    <div class="sliderValue">
+                        <input id="age-id" type="number" min="0" max="75" class="age-input" value="25" onkeyup="trackAge(this.value)" placeholder="Enter age" onFocus="value=''" onBlur="">
+                    </div>
+                    <div class="field">
+                        <div class="value left">0</div>
+                        <input type="range" min="0" max="75" value="25" class="range-line">
+                        <div class="value right">75</div>
+                    </div>
+                    <div class="lines">
+                        <div class="sm-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="lg-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="lg-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="lg-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="lg-line"></div>
+                        <div class="sm-line"></div>
+                        <div class="sm-line"></div>
+                    </div>
+                    <div class="numbers">
+                        <div class="num">15</div>
+                        <div class="num">30</div>
+                        <div class="num">45</div>
+                        <div class="num">60</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-title title-map" id="map-link">
+                    <h1><span class="purple">{{ 'main.main.title-map-purple'|trans }} </span><span class="underline">{{ 'main.main.title-map-underline'|trans }}</span></h1>
+                </div>
+                <div class="map">
+                    <div class="form-group">
+                        <input type="text" id="searchTextField" class="form-control" placeholder="{{ 'main.main.placeholder-map'|trans }}" />
+                    </div>
+                    <div id="result">
+                        <iframe
+                                width="100%"
+                                height="600"
+                                src = "https://maps.google.com/maps?q=52.520008,13.404954&z=7&output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="main-title" id="hero-link">
+                    <h1>
+                        <span class="purple">Ergebnisse</span>
+                        <span class="underline">nach Ihren Kriterien:</span>
+                    </h1>
+                    <div id="render-heroes" class=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <ul class="footer-links">
+                    <li><a href="#">{{ 'main.footer.link1'|trans }}</a></li>
+                    <li><a href="#">{{ 'main.footer.link2'|trans }}</a></li>
+                </ul>
+                <div class="copyright">
+{#                    © Copyright karma#}
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block extraJS %}
+    <script>
+        const navItem = document.querySelectorAll(".panel-item");
+        const sec = document.querySelectorAll("section");
+
+        function activeMenu(){
+            let len = sec.length;
+            while (--len && window.scrollY + 97 < sec[len].offsetTop){}
+            navItem.forEach(ltx => ltx.classList.remove("active"));
+            navItem[len].classList.add("active");
+        }
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+    </script>
+
+    <script>
+        // MAIN array with values (selectedAreas, selectedAge, selectedCity, selectedRegion, selectedCountry)
+        let arrRequest = ['',0,'','',''];
+
+        // Slider for section AGE
+        let age = 25;
+        ageItem = document.getElementById('age-id');
+        const slideValue = document.querySelector(".age-input");
+        const inputSlider = document.querySelector(".range-line")
+        inputSlider.oninput = (()=>{
+            age = inputSlider.value;
+            slideValue.textContent = age;
+            document.querySelector(".age-input").value = age;
+            arrRequest[1] = parseInt(age);
+        });
+
+        function trackAge(value) {
+            if (value < 0){
+                document.querySelector(".age-input").value = 0;
+                document.querySelector(".range-line").value = "0";
+            }
+            else if (value > 75){
+                document.querySelector(".age-input").value = 75;
+                document.querySelector(".range-line").value = "75";
+            }
+            else {
+                document.querySelector(".age-input").value = value;
+                document.querySelector(".range-line").value = value;
+                age = value;
+            }
+        }
+
+        slideValue.onblur = inputBlur;
+        function inputBlur() {
+            if (slideValue.value == "") {
+                document.querySelector(".age-input").value = 25;
+                document.querySelector(".range-line").value = "25";
+                arrRequest[1] = 25;
+            }
+        }
+
+        document.getElementById('age-id').addEventListener('change', function (){
+            arrRequest[1] = parseInt(age);
+        });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD0G2xbkz59f3YzRRV9rghmhf79IS6jC_8&language=de" defer></script>
+    <script>
+
+        //Realize section MAP
+        let searchInput = 'searchTextField';
+
+        $(document).ready(function () {
+            let autocomplete;
+            autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+                fields: ["geometry.location", "address_components"],
+                types: ['geocode'],
+            });
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                let place = autocomplete.getPlace();
+                let latitude = place.geometry.location.lat();
+                let longitude = place.geometry.location.lng();
+
+                arrRequest[2] = "";
+                arrRequest[3] = "";
+                arrRequest[4] = "";
+                if (place.address_components.length > 0) {
+                    for (let i = 0; i < place.address_components.length; i++) {
+                        if (place.address_components[i].types[0] === "locality") {
+                            arrRequest[2] = place.address_components[i].long_name;
+                        } else if (place.address_components[i].types[0] === "administrative_area_level_1") {
+                            arrRequest[3] = place.address_components[i].long_name;
+                        } else if (place.address_components[i].types[0] === "country") {
+                            arrRequest[4] = place.address_components[i].long_name;
+                        }
+                    }
+                } else {
+                    console.log('ERROR')
+                }
+
+                html = `
+          <iframe
+            width="100%"
+            height="600px"
+            frameborder="4"
+            src="https://maps.google.com/maps?q=${latitude},${longitude}&z=7&output=embed">
+          </iframe>`
+
+                if (arrRequest[0]) {
+                    renderHeroes();
+                }
+                $("#result").html(html)
+            });
+
+            // Dynamic Rendering Hero
+            $(".range-line").on("change", function() {
+                if (arrRequest[0]) {
+                    renderHeroes();
+                }
+            })
+
+            document.getElementById('age-id').addEventListener('change', function () {
+                if (arrRequest[0]) {
+                    renderHeroes();
+                }
+            });
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                if (arrRequest[0]) {
+                    renderHeroes();
+                }
+            });
+
+            workItem.forEach(element => {
+                element.addEventListener('click', function () {
+                    if (arrRequest[1] || arrRequest[4]) {
+                        renderHeroes();
+                    }
+                })
+            })
+
+            function renderHeroes() {
+                let link = `/sort/?`
+                link += `area=${arrRequest[0]}&`
+                link += `age=${arrRequest[1]}&`
+                link += `city=${arrRequest[2]}&`
+                link += `region=${arrRequest[3]}&`
+                link += `country=${arrRequest[4]}&`
+                console.log(link);
+
+                $.ajax({
+                    url: link,
+                    cache: false,
+                    success: function (html) {
+                        $("#render-heroes").html(html);
+                    }
+                })
+            }
+        })
+
+        // let searchInput = 'searchTextField';
+
+        // $(document).ready(function () {
+        //     let autocomplete;
+        //     autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+        //         fields: ["place_id"],
+        //         types: ['(cities)'],
+        //     });
+        //
+        //     const geocoder = new google.maps.Geocoder();
+        //
+        //     google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        //         let place = autocomplete.getPlace();
+        //
+        //         geocoder
+        //             .geocode({ placeId: place.place_id })
+        //             .then(({ results }) => {
+        //                 let latitude = results[0].geometry.location.lat();
+        //                 let longitude = results[0].geometry.location.lng();
+        //
+        //                 arrRequest[2] = "";
+        //                 arrRequest[3] = "";
+        //                 arrRequest[4] = "";
+        //
+        //                 if (results.length > 0) {
+        //                     console.log('WORK')
+        //                     for (let i = 0; i < results[0].address_components.length; i++) {
+        //                         if (results[0].address_components[i].types[0] === "locality") {
+        //                             arrRequest[2] = results[0].address_components[i].long_name;
+        //                         } else if (results[0].address_components[i].types[0] === "administrative_area_level_1") {
+        //                             arrRequest[3] = results[0].address_components[i].long_name;
+        //                         } else if (results[0].address_components[i].types[0] === "country") {
+        //                             arrRequest[4] = results[0].address_components[i].long_name;
+        //                         }
+        //                     }
+        //                 } else {
+        //                     console.log('ERROR')
+        //                 }
+        //                 console.log(arrRequest)
+        //                 html = `
+        //                   <iframe
+        //                     width="100%"
+        //                     height="600px"
+        //                     src="https://maps.google.com/maps?q=${latitude},${longitude}&z=7&output=embed">
+        //                   </iframe>`
+        //                 $("#result").html(html)
+        //             })
+        //             .catch((e) => console.log("Geocoder failed due to: " + e));
+        //     });
+        // });
+    </script>
+    <script>
+
+        // Onclick section WORK
+        workItem = document.querySelector('.work-items').querySelectorAll('.work-item');
+
+        workItem.forEach(element => {
+            element.addEventListener('click', function (){
+                workItem.forEach(div=>div.classList.remove('activeButton'))
+
+                this.classList.add('activeButton');
+                arrRequest[0] = document.getElementsByClassName('activeButton')[0].id;
+            })
+        });
+    </script>
+{% endblock %}

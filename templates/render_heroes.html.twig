@@ -1,0 +1,35 @@
+{% if companies is not empty %}
+    <span class="advice-render-hero">{{ comments }}</span><br>
+    <span class="advice-render-hero">{{ commAge }}</span><br>
+    <div class="fon">
+            {% for company in companies %}
+                {% set hero = company.hero %}
+                <div class="renderHero">
+                    <figure class="figur">
+                        <a href="{{ hero.wikiLink }}">
+                            <img  class="sizeImg" src="
+                                        {% if hero.photo is not null %}
+                                            {{ hero.photo }}
+                                        {%else%}
+                                            {{ asset('img/anonhero.png') }}
+                                        {%endif%}
+                            ">
+                            <figcaption>
+                                <strong>{{ hero.name }}
+                                    <p>"{{company.title}}"</p>
+                                    <p>{{company.city}}, {{hero.age}}</p>
+                                    <p class="wikiLinkP">View in Wiki</p>
+                                </strong>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            {% endfor %}
+    </div>
+{%else%}
+    <div class="else-hero-render-twig">
+        <span class="emoji-hero-null">¯\_(ツ)_/¯</span>
+        <span class="emoji-hero-null-text">Es gibt nichts.</span>
+        <span class="HeroNull">Vielleicht werden Sie der Erste sein?</span>
+    </div>
+{%endif%}

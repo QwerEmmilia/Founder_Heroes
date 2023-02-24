@@ -1,0 +1,42 @@
+---
+main:
+  header:
+    title: Founder heroes
+    subtitle: Find everyone, whom and where you want!
+    button: Let`s find!
+  main:
+    title-work-purple: Job?
+    title-work-underline: What's your
+    icons:
+      1: Agriculture
+      2: Trade
+      3: Construction
+      4: Biotech
+      5: Service
+      6: Energy
+      7: Financial
+      8: Research
+      9: Photography
+      10: Health
+      11: Nuclear
+      12: Recycling
+      13: Art
+      14: Resource
+      15: Aviation
+      16: News
+      17: Cinema
+      18: Nanotech
+      19: IT
+      20: Sport
+      21: Space
+      22: Fashion
+      23: Marketing
+      24: Automobile
+    title-age-purple: How old
+    title-age-underline: are you?
+    title-map-purple: Where do
+    title-map-underline: you come from?
+    placeholder-map: Enter a location
+  footer:
+    link1: Legal notice
+    link2: Data privacy

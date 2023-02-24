@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block link %}<link rel="stylesheet" href="/css/error-page.css">{% endblock %}
+
+{% block header %}
+    {% include "partials/_simple-header.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="d-flex justify-content-center flex-column" style="margin: 5% 25%">
+        <img src="{{ asset('img/media/' ~ random(['1.jpeg', '2.png', '3.jpg', '4.jpg'])) }}"
+                               alt="maybe funny meme" style="padding: 0 20%">
+        <br>
+        <h3>{{ error_message }}</h3>
+    </div>
+{% endblock %}

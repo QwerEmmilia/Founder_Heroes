@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block link %}<link rel="stylesheet" href="/css/add-hero.css">{% endblock %}
+
+{% block header %}
+    {% include "partials/_simple-header.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="d-flex flex-column container">
+        <div class="div-form">
+            <h3 class="admin-title">Edit info about heroes by id!</h3>
+            <br>
+            {% for message in app.flashes("notice") %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            {{ form_start(form) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}

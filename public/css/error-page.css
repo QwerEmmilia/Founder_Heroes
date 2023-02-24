@@ -1,0 +1,35 @@
+header {
+    background: linear-gradient(121.64deg, #AE93E4 21.74%, rgba(107, 106, 193, 0.37) 91.64%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.head-title h1 {
+    font-weight: 700;
+    font-size: 54px;
+    padding: 50px 0;
+}
+.head-title a {
+    color: floralwhite;
+    text-decoration: none;
+}
+.back-div {
+    padding-bottom: 50px;
+}
+.btn-back {
+    background: linear-gradient(101.54deg, rgba(121, 78, 241, 0.94) 29.36%, rgba(109, 80, 189, 0.79) 76.2%);
+    box-shadow: 0 9px 50px rgba(111, 79, 202, 0.4);
+    border-radius: 16px;
+    color: floralwhite;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn-back:hover {
+    color: floralwhite;
+    border-radius: 32px;
+}
+h3 {
+    text-align: center;
+}

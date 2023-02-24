@@ -1,0 +1,108 @@
+header {
+    background: linear-gradient(121.64deg, #AE93E4 21.74%, rgba(107, 106, 193, 0.37) 91.64%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.head-title h1 {
+    font-weight: 700;
+    font-size: 54px;
+    padding: 50px 0px;
+}
+.head-title a {
+    color: floralwhite;
+    text-decoration: none;
+}
+.back-div {
+    padding-bottom: 50px;
+}
+.btn-back {
+    background: linear-gradient(101.54deg, rgba(121, 78, 241, 0.94) 29.36%, rgba(109, 80, 189, 0.79) 76.2%);
+    box-shadow: 0 9px 50px rgba(111, 79, 202, 0.4);
+    border-radius: 16px;
+    color: floralwhite;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn-back:hover {
+    color: floralwhite;
+    border-radius: 32px;
+}
+.admin-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.alert-success {
+    text-align: center;
+    font-size: 22px;
+}
+.div-form label {
+    width: 140px;
+    margin: 10px 0px;
+    font-weight: 600;
+    font-size: 22px;
+}
+@media (max-width: 600px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .head-title h1 {
+        font-size: 48px;
+    }
+    .div-form label {
+        width: 100px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 340px) {
+    .head-title h1 {
+        font-size: 34px;
+    }
+    .div-form input {
+        width: 180px;
+    }
+    .div-form>form>div button {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+}
+input[type = "text"] {
+    outline: none;
+}
+input[type = "text"]:focus {
+    border: 2px solid #977BCB;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+#hero_companies>div>label.required {
+    display: none;
+}
+#hero_photo {
+    width: auto;
+}
+.div-form {
+    margin: 0 auto;
+}
+.div-form>form>div button {
+    display: flex;
+    justify-content: center;
+}
+
+#hero_submit {
+    margin: 20px auto;
+    border: 0;
+    background: linear-gradient(96.24deg, #54EB75 10.69%, rgba(54, 182, 59, 0.79) 74.91%);
+    box-shadow: 0px 9px 50px rgba(99, 211, 103, 0.7);
+    border-radius: 10px;
+    color: floralwhite;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 30px;
+    text-transform: uppercase;
+}

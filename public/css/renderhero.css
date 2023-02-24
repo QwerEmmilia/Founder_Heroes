@@ -1,0 +1,252 @@
+/* RENDER HEROES */
+
+    .fon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .fon .renderHero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 290px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .fon .sizeImg {
+        width: 220px;
+        height: 290px;
+        filter: brightness(70%);
+
+    }
+
+    .fon .renderHero:hover img{
+        box-shadow: 0 0 black;
+        filter: brightness(20%);
+        -webkit-filter: brightness(20%);
+        transition: 1.1s ease-in-out;
+    }
+
+    .fon .renderHero figure {
+        position: relative;
+        width: 220px;
+    }
+    .renderHero figure figcaption {
+        background: linear-gradient(121.64deg, #AE93E4 21.74%,
+                    rgba(107, 106, 193, 0.37) 91.64%);
+        bottom: 0;
+        box-sizing: border-box;
+        position: absolute;
+        width: 220px;
+        padding: 1rem;
+        -webkit-transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+    }
+    .fon .renderHero figure p {
+        margin: 0;
+        padding-top: 10px;
+    }
+    .fon .renderHero img {
+        object-fit: cover;
+    }
+
+    .fon figure {
+        width: calc(50% - 2rem);
+    }
+    .fon figure figcaption {
+        height: 60px;
+    }
+    .fon figure:hover figcaption {
+        position: absolute;
+        bottom: 0;
+        width: 220px;
+        height: 80%;
+        transition: height 0.3s ease-in;
+
+    }
+    .fon figure:hover p {
+        opacity: 1;
+        -webkit-transition: opacity 0.4s ease-in 0.5s;
+        -moz-transition: opacity 0.4s ease-in 0.5s;
+        -ms-transition: opacity 0.4s ease-in 0.5s;
+        transition: opacity 0.4s ease-in 0.5s;
+    }
+    .fon p {
+        opacity: 0;
+        text-align: center;
+    }
+    .fon .wikiLinkP {
+        position: absolute;
+        font-size: 18px;
+        bottom: 0;
+        padding-left: 40px;
+        padding-bottom: 15px;
+    }
+    .emoji-hero-null {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 70px;
+    }
+    .emoji-hero-null-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 30px;
+
+    }
+    .HeroNull {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 50px;
+        color: #A38CD0;
+        font-weight: bold;
+    }
+    .advice-render-hero {
+        color: #A38CD0;
+    }
+
+@media (max-width: 920px) {
+
+    .fon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fon .renderHero {
+        display: flex;
+        flex-wrap: wrap;
+        height: 210px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .fon .sizeImg {
+        width: 140px;
+        height: 210px;
+        filter: brightness(70%);
+    }
+
+    .fon .renderHero figure {
+        position: relative;
+        width: 140px;
+    }
+
+    .renderHero figure figcaption {
+        background: linear-gradient(121.64deg, #AE93E4 21.74%,
+        rgba(107, 106, 193, 0.37) 91.64%);
+        bottom: 0;
+        box-sizing: border-box;
+        position: absolute;
+        width: 140px;
+        padding-top: 3px;
+        -webkit-transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .fon .renderHero figure p {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .fon .renderHero img {
+        object-fit: cover;
+    }
+
+    .fon figure {
+        width: calc(50% - 2rem);
+    }
+
+    .fon figure figcaption {
+        height: 50%;
+    }
+    .fon p {
+        opacity: 1;
+        text-align: center;
+    }
+
+    .fon .wikiLinkP {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .fon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fon .renderHero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 290px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .fon .sizeImg {
+        width: 220px;
+        height: 290px;
+        filter: brightness(70%);
+
+    }
+
+    .fon .renderHero:hover img{
+        box-shadow: 0 0 black;
+        filter: brightness(20%);
+        -webkit-filter: brightness(20%);
+        transition: 1.1s ease-in-out;
+    }
+
+    .fon .renderHero figure {
+        position: relative;
+        width: 220px;
+    }
+    .renderHero figure figcaption {
+        background: linear-gradient(121.64deg, #AE93E4 21.74%,
+        rgba(107, 106, 193, 0.37) 91.64%);
+        bottom: 0;
+        box-sizing: border-box;
+        position: absolute;
+        width: 220px;
+        padding: 1rem;
+        -webkit-transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+    }
+    .fon .renderHero figure p {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .fon .renderHero img {
+        object-fit: cover;
+    }
+
+    .fon figure {
+        width: calc(50% - 2rem);
+    }
+
+    .fon figure figcaption {
+        height: 50%;
+    }
+    .fon p {
+        opacity: 1;
+        text-align: center;
+    }
+
+    .fon .wikiLinkP {
+        display: none;
+    }
+}

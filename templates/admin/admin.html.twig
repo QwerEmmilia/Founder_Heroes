@@ -1,0 +1,67 @@
+{% extends "base.html.twig" %}
+
+{% block link %}<link rel="stylesheet" href="/css/adminstyle.css">{% endblock %}
+
+{% block header %}
+    {% include "partials/_simple-header.html.twig" %}
+{% endblock %}
+
+{% block body %}
+<h3 class="admin-title">Main Admin page</h3>
+    <br>
+    {% for message in app.flashes("notice") %}
+    <div class="container alert-div">
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    </div>
+    {% endfor %}
+    <br>
+    <div class="add-btn-div">
+        <a href="{{ path("add-hero") }}" class="btn-success">Add hero</a>
+    </div>
+
+    <form action="{{ path("admin") }}" method="get">
+        <div class="container">
+            <label for="name" class="search-title">Search</label>
+            <br>
+            <input type="text" name="search" class="search-input">
+            <input type="submit" value="Find!" class="search-btn">
+        </div>
+    </form>
+    <br>
+
+    
+    <div class="container">
+        <div class="div-heroes">
+            <table>
+                <th>Name</th>
+                <th>Age</th>
+                <th>WikiLink</th>
+                <th>Company title</th>
+                <th>Area</th>
+                <th>City</th>
+                <th>Region</th>
+                <th>Country</th>
+                <th>Delete</th>
+            {% for company in pager %}
+                {% set hero = company.hero %}
+                    <tr>
+                        <td class="hero-name text-style"><a href="{{ path("edit-hero", { "id": hero.id}) }}">{{ hero.name }}</a></td>
+                        <td class="hero-age text-style">{{ hero.age }}</td>
+                        <td class="hero-link text-style"><a href="https://{{ hero.wikiLink }}">WikiLink</a></td>
+                        <td class="company-title text-style">{{ company.title }}</td>
+                        <td class="company-area text-style">{{ company.area }}</td>
+                        <td class="company-city text-style">{{ company.city }}</td>
+                        <td class="company-region text-style">{{ company.region }}</td>
+                        <td class="company-country text-style">{{ company.country }}</td>
+                        <td><a href="{{ path("delete-hero", {"id": hero.id}) }}" class="btn btn-danger delete">Delete</a></td>
+                    </tr>
+
+            {% endfor %}
+            </table>
+        </div>
+
+        {{ pagerfanta(pager, "twitter_bootstrap5") }}
+    </div>
+{% endblock %}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #AE93E4;
+    font-family: 'Montserrat', sans-serif;
+}
+.box{
+    max-width: 420px;
+    padding: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #333;
+    text-align: center;
+    border-radius: 24px;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #A38CD0;
+    padding: 14px 10px;
+    width: 240px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    border-color: #885CDD;
+}
+.box button[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #885CDD;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box button[type = "submit"]:hover{
+    background: #885CDD;
+}
+label[for = registration_form_username], label[for = registration_form_plainPassword] {
+    display: none;
+}
+label[for = registration_form_agreeTerms] {
+    color: lightgray;
+}
+#registration_form_agreeTerms {
+    margin-left: 12px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 20%;
+    position: relative;
+    top: 4px;
+}
+.logg-div {
+    padding: 20px;
+    font-size: 24px;
+}
+.logg-div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .box {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: linear-gradient(121.64deg, #AE93E4 21.74%, rgba(107, 106, 193, 0.37) 91.64%);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.head-title h1 {
+    font-weight: 700;
+    font-size: 54px;
+    padding: 50px 0px;
+}
+.head-title a {
+    color: floralwhite;
+    text-decoration: none;
+}
+.back-div {
+    padding-bottom: 50px;
+}
+.btn-back {
+    background: linear-gradient(101.54deg, rgba(121, 78, 241, 0.94) 29.36%, rgba(109, 80, 189, 0.79) 76.2%);
+    box-shadow: 0 9px 50px rgba(111, 79, 202, 0.4);
+    border-radius: 16px;
+    color: floralwhite;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn-back:hover {
+    color: floralwhite;
+    border-radius: 32px;
+}
+.admin-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.add-btn-div {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.alert-div {
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-success {
+    background: linear-gradient(96.24deg, #54EB75 10.69%, rgba(54, 182, 59, 0.79) 74.91%);
+    box-shadow: 0px 9px 50px rgba(99, 211, 103, 0.79);
+    border-radius: 10px;
+    border: 0;
+    color: floralwhite;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-success:hover {
+    color: floralwhite;
+}
+.alert-success {
+    font-size: 22px;
+    text-align: center;
+}
+.text-style {
+    font-size: 20px;
+    color: #0a0a0a;
+}
+.text-style a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+.text-style a:hover {
+    text-decoration: underline;
+}
+.hero-name {
+    width: 15%;
+}
+.hero-age {
+    width: 4%;
+}
+.hero-link {
+    width: 7%;
+}
+.company-title {
+    width: 17%;
+}
+.company-area {
+    width: 22%;
+}
+.company-city {
+    width: 12%;
+}
+.company-region {
+    width: 11%;
+}
+.company-country {
+    width: 11%;
+}
+td {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.pagination {
+    margin: 40px 0 100px 0;
+    justify-content: center;
+}
+.page-link {
+    color: #977BCB;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.page-link:hover {
+    color: #6f42c1;
+}
+.active>.page-link, .page-link.active {
+    background-color: #977BCB;
+    border-color: #6f42c1;
+}
+.delete {
+    font-weight: bold;
+}
+.search-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+}
+.search-input {
+    width: 275px;
+    padding: 5px;
+    border: 1px solid #0a0a0a;
+    border-radius: 6px;
+    outline: none;
+}
+.search-input:focus {
+    border: 2px solid #977BCB;
+}
+.search-btn {
+    padding: 7px 15px;
+    border-radius: 6px;
+    border: 1px solid #6f42c1;
+    background: linear-gradient(101.54deg, rgba(121, 78, 241, 0.94) 29.36%, rgba(109, 80, 189, 0.79) 76.2%);
+    color: floralwhite;
+    font-weight: 700;
+}

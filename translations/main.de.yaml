@@ -1,0 +1,42 @@
+---
+main:
+  header:
+    title: Founder heroes
+    subtitle: Finden Sie jeden, wen und wo Sie wollen!
+    button: Lass uns finden!
+  main:
+    title-work-purple: Beruf?
+    title-work-underline: Wie ist deine
+    icons:
+      1: Landwirtschaft
+      2: Handel
+      3: Bauindustrie
+      4: Biotech
+      5: Dienstleistung
+      6: Energie
+      7: Finanzmärkte
+      8: Forschung
+      9: Fotografie
+      10: Gesundheit
+      11: Nuklear
+      12: Recycling
+      13: Kunst
+      14: Rohstoffe
+      15: Luftfahrt
+      16: Nachrichten
+      17: Kino
+      18: Nanotech
+      19: IT
+      20: Sportarten
+      21: Raum
+      22: Mode
+      23: Marketing
+      24: Automobile
+    title-age-purple: Wie alt
+    title-age-underline: bist du?
+    title-map-purple: Woher
+    title-map-underline: kommst du?
+    placeholder-map: Geben Sie einen Standort ein.
+  footer:
+    link1: Impressum
+    link2: Datenschutz
